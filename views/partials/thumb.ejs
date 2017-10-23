@@ -1,0 +1,18 @@
+<div class="row">
+ <% for(var i=0; i<products.length; i++) {%>
+ <% console.log(products.length) %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail" >
+      <img src='<%= products[i].imagePath %>' id="img" class="img-responsive" alt="...">
+      <div class="caption text-center">
+        <h3><%= products[i].title %></h3>
+        <p><%= products[i].price %> Rs</p>
+        <p><a href="#" class="btn btn-primary" role="button">ADD</a> </p>
+      </div>
+    </div>
+  </div>
+
+
+<% } %>
+</div>
+
